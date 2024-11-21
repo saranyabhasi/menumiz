@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Menumiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="./contents/styles.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/select/2.1.0/css/select.dataTables.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/5.0.4/css/fixedColumns.dataTables.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./assets/css/datatables.min.css">
+  <!-- <script src="./assets/js/datatables.min.js"></script> -->
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/dataTables.fixedColumns.js"></script>
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/fixedColumns.dataTables.js"></script>
+  <script src="https://cdn.datatables.net/select/2.1.0/js/dataTables.select.js"></script>
+  <script src="https://cdn.datatables.net/select/2.1.0/js/select.dataTables.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.datatables.net/v/dt/dt-2.1.8/datatables.min.js"></script> -->
+  <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="side-menu">
+        <div class="logo-section">
+            <img class="logo-icon" />
+            <img class="switch-icon" />
+        </div>
+        <div class="menu-list-section">
+            <ul>
+                <li class="menu-list-option">
+                    <i class="dashboard-icon"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="calendar-icon"></i>
+                    <span>Calendar</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="recruitment-icon"></i>
+                    <span>Recruitment</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="employees-icon"></i>
+                    <span>Employees</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="leave-icon"></i>
+                    <span>Leave</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="organisation-icon"></i>
+                    <span>Organisation</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="billings-icon"></i>
+                    <span>Billings</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="engagement-icon"></i>
+                    <span>Engagement</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="development-icon"></i>
+                    <span>Development</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="performance-icon"></i>
+                    <span>Performance</span>
+                </li>
+                <li class="menu-list-option">
+                    <i class="reports-icon"></i>
+                    <span>Reports</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-section-wrapper">
+        <div id="topMenu">
+            <div class="menu-left-section">
+                <img class="union-icon" alt="" />
+                <span>Menumiz HR</span>
+            </div>
+            <div class="menu-right-section">
+                <div class="search-box">
+                    <input type="text" placeholder="Enter any keyword..." />
+                </div>
+                <img class="settings-icon pointer" alt="" />
+                <img class="notification-icon pointer" alt="" />
+                <img class="pointer" src="./assets/img/avatar.png" alt="" />
+            </div>
+        </div>
+        <div class="content-section">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#leaveMgt">Leave Management</a></li>
+                    <li><a href="#leaveRqt">Leave Requests</a></li>
+                    <li><a href="#leaveTypes">Leave Types</a></li>
+                    <li><a href="#leaveCal">Leave Calendar</a></li>
+                    <li><a href="#leaveRpt">Leave Report</a></li>
+                    <li><a href="#leaveAprvr">Leave Approver</a></li>
+                </ul>
+                <!-- Slider main container -->
+                 <!-- <div class="swiper-main-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="heatmap-section">
+                                <span>Heatmap</span>
+                                <div></div>
+                            </div>
+                            <div class="heatmap-day-wrapper">
+                                <div class="days-section">
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div class="selected-day">Fri</div>
+                                    <div>Sat</div>
+                                    <div>Sun</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        </div>
+                       
+                    </div>
+                </div> -->
+                <div class="leave-requests-header">
+                    <h3>Leave Requests</h3>
+                    <div>
+                        <button class="active">List View</button>
+                        <button>Month View</button>
+                    </div>
+                </div>
+                <div class="leaves-subsection">
+                    <div id="leavesSubTabs">
+                        <ul>
+                            <li><a href="#allTab">All</a></li>
+                            <li><a href="#approvedTab">Approved</a></li>
+                            <li><a href="#rejectedTab">Rejected</a></li>                            
+                        </ul>
+                        <div id="allTab"></div>
+                        <div id="approvedTab"></div>
+                        <div id="rejectedTab"></div>
+                    </div>
+                    <div class="datepicker-section">                        
+                        <p><img class="left-arrow" alt="" />
+                            <input type="text" readonly id="datePicker"></p>
+                            <div id="datePickerIcon" class="pointer">
+                                <img class="datepicker-icon" src="./assets/img/datepicker-icon.svg" alt="" />
+                                <img class="down-arrow" alt="" />
+                            </div>
+                        
+                        <img class="right-arrow" />
+                    </div>
+                </div>
+                <div id="leaveMgt">
+                    <table id="leavesTable" class="stripe row-border order-column nowrap" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>#</th>
+                                <th>NAME</th>
+                                <th>PERIOD</th>
+                                <th>DAY(S)</th>
+                                <th>LEAVE TYPE</th>
+                                <th>ACTIONS</th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <span class="not-approved-status"></span>
+                                </td>
+                                <td class="name-text">
+                                    <img src="./assets/img/avatar.png" alt="" />
+                                    <span>Mark Jacobs</span>
+                                </td>
+                                <td>31 Mar, 2023 09:00 AM<br />
+                                    31 Mar, 2023 18:00 PM</td>
+                                <td class="days-text">1.0</td>
+                                <td>Annual Leave</td>
+                                <td class="action-buttons">
+                                    <button id="rejectButton">REJECT</button>
+                                    <button id="approveButton">APPROVE</button>
+                                    <img class="right-arrow" src="./assets/img/right-arrow.svg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <span class="not-approved-status"></span>
+                                </td>
+                                <td class="name-text">
+                                    <img src="./assets/img/avatar.png" alt="" />
+                                    <span>Mark Jacobs</span>
+                                </td>
+                                <td>31 Mar, 2023 09:00 AM<br />
+                                    31 Mar, 2023 18:00 PM</td>
+                                <td class="days-text">1.0</td>
+                                <td>Annual Leave</td>
+                                <td class="action-buttons">
+                                    <button id="rejectButton">REJECT</button>
+                                    <button id="approveButton">APPROVE</button>
+                                    <img class="right-arrow" src="./assets/img/right-arrow.svg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <span class="not-approved-status"></span>
+                                </td>
+                                <td class="name-text">
+                                    <img src="./assets/img/avatar.png" alt="" />
+                                    <span>Mark Jacobs</span>
+                                </td>
+                                <td>31 Mar, 2023 09:00 AM<br />
+                                    31 Mar, 2023 18:00 PM</td>
+                                <td class="days-text">1.0</td>
+                                <td>Annual Leave</td>
+                                <td class="action-buttons">
+                                    <button id="rejectButton">REJECT</button>
+                                    <button id="approveButton">APPROVE</button>
+                                    <img class="right-arrow" src="./assets/img/right-arrow.svg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <span class="approved-status"></span>
+                                </td>
+                                <td class="name-text">
+                                    <img src="./assets/img/avatar.png" alt="" />
+                                    <span>Mark Jacobs</span>
+                                </td>
+                                <td>31 Mar, 2023 09:00 AM<br />
+                                    31 Mar, 2023 18:00 PM</td>
+                                <td class="days-text">1.0</td>
+                                <td>Annual Leave</td>
+                                <td class="action-buttons">
+                                    <button id="approveButton">APPROVED</button>
+                                    <img class="right-arrow" src="./assets/img/right-arrow.svg" alt="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="leaveRqt"></div>
+                <div id="leaveTypes"></div>
+                <div id="leaveCal"></div>
+                <div id="leaveRpt"></div>
+                <div id="leaveAprvr"></div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
